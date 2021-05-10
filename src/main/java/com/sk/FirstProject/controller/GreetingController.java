@@ -12,4 +12,10 @@ public class GreetingController {
         model.put("message","Hello There");
         return "greeting";
     }
+
+    @RequestMapping("thyme")
+    public  String thyme(Map<String,Object> model){
+        model.put("message","Hey Thymeleaf");
+        return "thyme";
+    }
 }
